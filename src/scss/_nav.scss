@@ -1,3 +1,4 @@
+// set-up nav color + align content
 .nav {
   background-color: $gold;
   height: 15vh;
@@ -6,6 +7,7 @@
   justify-content: center;
 }
 
+// container of nav, which takes up 90% of screen
 .nav-container {
   width: 90%;
   height: 70%;
@@ -13,22 +15,27 @@
   justify-content: space-between;
 }
 
+// logo in nav (text + logo)
 .nav-logo {
   display: flex;
   align-items: center;
+  // img logo
   img {
     height: 100%;
     max-width: 100%;
   }
+  // text logo
   .logo-name {
     height: 70%;
   }
 }
 
+// nav-tabs - to go to other sections
 .nav-tabs{
   display: flex;
   align-items: center;
   font-family: $primaryFont;
+  // each nav tab
   .nav-tab {
     text-decoration: none;
     color: $black;
