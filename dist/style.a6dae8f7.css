@@ -874,9 +874,22 @@
   height: 70%;
 }
 
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.nav-tabs .nav-tab {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

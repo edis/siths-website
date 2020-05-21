@@ -24,3 +24,16 @@
     height: 70%;
   }
 }
+
+.nav-tabs{
+  display: flex;
+  align-items: center;
+  font-family: $primaryFont;
+  .nav-tab {
+    text-decoration: none;
+    color: $black;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+  }
+}
+
