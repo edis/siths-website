@@ -117,15 +117,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/index.js":[function(require,module,exports) {
-// function to animate burger and nav selection
-var hamburger = document.querySelector(".hamburger");
-var navMenu = document.querySelector(".nav-tabs");
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("is-active");
-  navMenu.classList.toggle("nav-active");
+})({"js/nav.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+exports.hamburgerMenu = hamburgerMenu;
+
+// function to animate burger and nav selection
+function hamburgerMenu() {
+  var hamburger = document.querySelector(".hamburger");
+  var navMenu = document.querySelector(".nav-tabs");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
+    navMenu.classList.toggle("nav-active");
+  });
+}
+},{}],"js/index.js":[function(require,module,exports) {
+"use strict";
+
+var _nav = require("./nav");
+
+// Handles Hamburger Menu
+(0, _nav.hamburgerMenu)();
+},{"./nav":"js/nav.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -153,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43137" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42937" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
