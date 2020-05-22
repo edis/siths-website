@@ -1,0 +1,94 @@
+// setup height
+.welcome {
+  height: 88vh;
+  overflow: hidden;
+}
+
+// bg video positioning
+.welcome-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  min-height: 110%;
+  // >100% needed for some 16:10 monitors
+  z-index: -1;
+}
+
+// position & style for mobile text overlay
+.welcome-content-mobile {
+  background-color: black;
+  position: absolute;
+  height: 8rem;
+  width: 16rem;
+  left: 2rem;
+  bottom: 2rem;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  // font size for main text on mobile
+  .mobile-text {
+    font-size: 1.85rem;
+  }
+}
+
+// position & style for desktop ver.
+.welcome-content-desktop {
+  display: none;
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-color: black;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
+  //   setup text clipping over irregular shape
+  .welcome-shape-desktop {
+    shape-outside: polygon(0 0, 20% 0, 55% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  //   main text for desktop
+  .desktop-text {
+    font-size: 4vw;
+    padding: 4rem;
+    text-align: left;
+  }
+  //   subtext (desktop only)
+  .welcome-subtext {
+    color: $white;
+    font-family: $secondaryFont;
+    padding: 0 2rem 5rem 2rem;
+    text-align: left;
+    font-size: 2vw;
+  }
+  //   button styles
+  .welcome-button {
+    background-color: $gold;
+    color: $black;
+    font-family: $primaryFont;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 30px;
+  }
+}
+
+// styles shared b/w main text of both versions
+.welcome-main-text {
+  color: $gold;
+  font-family: $primaryFont;
+  text-transform: uppercase;
+}
+
+// media queries to hide either format
+@media screen and ($desktop) {
+  .welcome-content-mobile {
+    display: none;
+  }
+  .welcome-content-desktop {
+    display: block;
+  }
+}

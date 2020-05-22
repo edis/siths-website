@@ -50,7 +50,7 @@
 }
 
 // media queries
-@media screen and (min-width: 1000px) {
+@media screen and ($desktop) {
   // setup nav bar for different layout
   .nav {
     display: flex;
@@ -67,6 +67,7 @@
     height: auto;
     display: flex;
     align-items: center;
+    // change font size a little
     * {
       font-size: 1.25rem;
       margin: 1rem 0.5rem;
