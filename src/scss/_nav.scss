@@ -1,0 +1,75 @@
+// set-up nav color + font
+.nav {
+  background-color: $gold;
+  font-family: $primaryFont;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+// nav logo position + size
+.nav-logo {
+  display: inline-block;
+  height: 11.75vh;
+  padding: 0.8rem 0 0 0.8rem;
+  // center alignment of image logos
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+// hamburger positioning
+.hamburger {
+  position: relative;
+  height: 11.75vh;
+  float: right;
+  padding: 0.8rem 0.8rem 0 0;
+}
+
+// styling of tab dropdown
+.nav-tabs {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+  // setting transition for dropdown effect
+  transition: height 0.25s ease-out;
+  // styling list elements
+  * {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+    margin: 1rem auto;
+  }
+}
+
+// set active state for nav menu
+.nav-active {
+  height: 12rem;
+}
+
+// media queries
+@media screen and (min-width: 1000px) {
+  // setup nav bar for different layout
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: 13.5vh;
+  }
+  // disabling hamburger on desktop
+  .hamburger {
+    display: none;
+  }
+  // display tabs on bar
+  .nav-tabs {
+    padding: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    * {
+      font-size: 1.25rem;
+      margin: 1rem 0.5rem;
+    }
+  }
+}

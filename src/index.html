@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,8 +6,31 @@
     <link rel="stylesheet" href="scss/style.scss" />
     <title>siths remastered</title>
   </head>
+
   <body>
-    <h1>testing</h1>
+    <!-- navigation bar -->
+    <nav class="nav">
+      <!-- navigation bar logo (text + img)-->
+      <div class="nav-logo">
+        <img class="logo-icon" src="media/header_logo.png" alt="" />
+        <img class="logo-name" src="media/name.svg" alt="" />
+      </div>
+      <!-- hamburger (npm) -->
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <!-- navigation tabs -->
+      <ul class="nav-tabs">
+        <li><a href="#" class="nav-tab">Academics</a></li>
+        <li><a href="#" class="nav-tab">Student Life</a></li>
+        <li><a href="#" class="nav-tab">Parents</a></li>
+        <li><a href="#" class="nav-tab">Staff</a></li>
+        <li><a href="#" class="nav-tab">Contact Us</a></li>
+      </ul>
+    </nav>
+
     <script src="js/index.js"></script>
   </body>
 </html>
