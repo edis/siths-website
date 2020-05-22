@@ -1,46 +1,75 @@
-// set-up nav color + align content
+// set-up nav color + font
 .nav {
   background-color: $gold;
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-// container of nav, which takes up 90% of screen
-.nav-container {
-  width: 90%;
-  height: 70%;
-  display: flex;
-  justify-content: space-between;
-}
-
-// logo in nav (text + logo)
-.nav-logo {
-  display: flex;
-  align-items: center;
-  // img logo
-  img {
-    height: 100%;
-    max-width: 100%;
-  }
-  // text logo
-  .logo-name {
-    height: 70%;
-  }
-}
-
-// nav-tabs - to go to other sections
-.nav-tabs{
-  display: flex;
-  align-items: center;
   font-family: $primaryFont;
-  // each nav tab
-  .nav-tab {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+// nav logo position + size
+.nav-logo {
+  display: inline-block;
+  height: 11.75vh;
+  padding: 0.8rem 0 0 0.8rem;
+  // center alignment of image logos
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+// hamburger positioning
+.hamburger {
+  position: relative;
+  height: 11.75vh;
+  float: right;
+  padding: 0.8rem 0.8rem 0 0;
+}
+
+// styling of tab dropdown
+.nav-tabs {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+  // setting transition for dropdown effect
+  transition: height 0.25s ease-out;
+  // styling list elements
+  * {
+    font-size: 1rem;
     text-decoration: none;
     color: $black;
-    font-size: 1.5rem;
-    padding: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
   }
 }
 
+// set active state for nav menu
+.nav-active {
+  height: 12rem;
+}
+
+// media queries
+@media screen and (min-width: 1000px) {
+  // setup nav bar for different layout
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: 13.5vh;
+  }
+  // disabling hamburger on desktop
+  .hamburger {
+    display: none;
+  }
+  // display tabs on bar
+  .nav-tabs {
+    padding: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    * {
+      font-size: 1.25rem;
+      margin: 1rem 0.5rem;
+    }
+  }
+}

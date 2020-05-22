@@ -1,11 +1,13 @@
 // importing fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans:wght@400;600&display=swap");
 
+// import any variables first
+@import "variables";
+
 // hamburgers
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
-// importing partials
-@import "variables";
+// importing other partials
 @import "nav";
 @import "cb1";
 
