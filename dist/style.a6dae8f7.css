@@ -1025,6 +1025,21 @@
   margin-bottom: 1.1rem;
 }
 
+@media screen and (min-width: 1025px) {
+  .principals-message-content {
+    text-align: center;
+    margin: 3rem 12rem;
+  }
+
+  .principals-message-title-text {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .principals-message-paragraph {
+    font-size: 1.8rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

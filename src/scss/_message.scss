@@ -33,6 +33,25 @@
   margin-bottom: 1.1rem;
 }
 
+// media queries
+@media screen and ($desktop) {
+  // center text and set margins
+  .principals-message-content{
+    text-align: center;
+    margin: 3rem 12rem;
+  }
+
+  // change font of paragraphs
+  .principals-message-title-text{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .principals-message-paragraph{
+    font-size: 1.8rem;
+  }
+}
+
+
 
 
 
