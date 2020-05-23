@@ -1,5 +1,5 @@
 // setup height
-.welcome {
+#welcome {
   height: 88vh;
   overflow: hidden;
 }
@@ -8,7 +8,7 @@
 .welcome-video {
   position: fixed;
   top: 50%;
-  left: 25%;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: auto;
   min-height: 110%;
