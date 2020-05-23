@@ -1002,6 +1002,10 @@
   justify-content: center;
 }
 
+.principal-image {
+  display: none;
+}
+
 .principals-message-content {
   margin: 2rem 1.5rem;
 }
@@ -1026,11 +1030,38 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .principals-message-content {
-    text-align: center;
-    margin: 4rem 12rem;
+  .principal-message-content-all {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: 3rem auto 3rem auto;
   }
 
+  .principal-image {
+    display: block;
+    float: left;
+    height: 30vh;
+  }
+
+  .principals-message-content {
+    display: inline-block;
+  }
+
+  .principals-message-title-text {
+    text-align: left;
+  }
+
+  .principals-message-title-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .principals-message-paragraph {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 2000px) {
   .principals-message-title-text {
     font-size: 3.5rem;
     margin-bottom: 2rem;

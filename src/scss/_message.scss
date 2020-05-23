@@ -6,6 +6,11 @@
   justify-content: center;
 }
 
+// hide principal-image
+.principal-image{
+  display: none;
+}
+
 // set margins for content
 .principals-message-content{
   margin: 2rem 1.5rem;
@@ -34,18 +39,58 @@
 }
 
 // media queries
+
+// for desktop
 @media screen and ($desktop) {
-  // center text and set margins
-  .principals-message-content{
-    text-align: center;
-    margin: 4rem 12rem;
+
+  // display flex + center
+  .principal-message-content-all{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: 3rem auto 3rem auto;
   }
+
+  // principal image
+  .principal-image{
+    display: block;
+    float: left;
+    height: 30vh;
+  }
+
+  // main message-content
+  .principals-message-content {
+    display: inline-block;
+  }
+
+  // align text to left side
+  .principals-message-title-text{
+    text-align: left;
+  }
+
+  // change font of paragraphs
+  .principals-message-title-text{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  // change font of paragraph
+  .principals-message-paragraph{
+    font-size: 1.1rem;
+  }
+}
+
+// for monitors and larger screens
+@media screen and ($larger-screens) {
 
   // change font of paragraphs
   .principals-message-title-text{
     font-size: 3.5rem;
     margin-bottom: 2rem;
   }
+
+  // change font of paragraph
   .principals-message-paragraph{
     font-size: 1.8rem;
   }
