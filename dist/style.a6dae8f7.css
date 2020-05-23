@@ -934,7 +934,7 @@
   height: 8rem;
   width: 16rem;
   left: 3rem;
-  bottom: 4rem;
+  bottom: 5rem;
   padding: 0.75rem;
   display: flex;
   justify-content: center;
@@ -1081,6 +1081,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
