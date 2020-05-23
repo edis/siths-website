@@ -914,13 +914,14 @@
 }
 #welcome {
   height: 88vh;
+  position: relative;
   overflow: hidden;
 }
 
 .welcome-video {
   position: fixed;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
   min-height: 110%;
@@ -941,7 +942,8 @@
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
 .welcome-content-mobile .mobile-text {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 .welcome-content-desktop {
@@ -953,7 +955,7 @@
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
 }
 .welcome-content-desktop .welcome-shape-desktop {
-  shape-outside: polygon(0 0, 20% 0, 55% 100%, 0 100%);
+  shape-outside: polygon(0 0, 15% 0, 50% 100%, 0 100%);
   width: 100%;
   height: 100%;
   float: left;
@@ -987,6 +989,10 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .welcome-video {
+    left: 45%;
+  }
+
   .welcome-content-mobile {
     display: none;
   }
