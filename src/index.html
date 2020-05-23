@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="scss/style.scss" />
     <title>siths remastered</title>
   </head>
@@ -32,7 +34,7 @@
     </nav>
 
     <!-- welcome block -->
-    <section class="welcome">
+    <section id="welcome">
       <!-- bg video -->
       <video
         autoplay
@@ -66,7 +68,36 @@
       </div>
     </section>
 
+    <!--  principals message block  -->
+    <section id="principals-message">
+      <!--  all content in principal message   -->
+      <div class="principals-message-content">
 
+        <!--   principal message title   -->
+        <div class="principals-message-title">
+          <h1 class="principals-message-title-text">
+            Principal's Message
+          </h1>
+        </div>
+
+        <!--   principal message description paragraph   -->
+        <div class="principals-message-paragraph">
+          <!-- message top paragraph  -->
+          <p class="principals-message-paragraph-text-top">
+            Welcome to the Staten Island Technical High School website.
+          </p>
+          <!--  message bottom paragraph  -->
+          <p class="principals-message-paragraph-text-bottom">
+            As a Next-Gen 21st Century leader and communicator, I invite you to join me live and "in the moment" as we
+            celebrate and share our progress and accomplishments within and among the Staten Island Technical High
+            School community.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- link to js files   -->
     <script src="js/index.js"></script>
   </body>
 </html>

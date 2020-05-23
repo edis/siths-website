@@ -912,7 +912,7 @@
     margin: 1rem 0.5rem;
   }
 }
-.welcome {
+#welcome {
   height: 88vh;
   overflow: hidden;
 }
@@ -920,7 +920,7 @@
 .welcome-video {
   position: fixed;
   top: 50%;
-  left: 25%;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: auto;
   min-height: 110%;
@@ -995,6 +995,36 @@
     display: block;
   }
 }
+#principals-message {
+  background-color: #c2b669;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.principals-message-content {
+  margin: 2rem 1.5rem;
+}
+
+.principals-message-title-text {
+  font-family: "Montserrat";
+  font-size: 2.3rem;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.principals-message-paragraph {
+  font-family: "Open Sans";
+  color: black;
+  font-size: 1.2rem;
+}
+
+.principals-message-paragraph-text-top {
+  margin-bottom: 1.1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
