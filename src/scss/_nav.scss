@@ -3,6 +3,7 @@
   background-color: $gold;
   font-family: $primaryFont;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 // nav logo position + size
@@ -29,9 +30,9 @@
 // styling of tab dropdown
 .nav-tabs {
   height: 0;
-  overflow: hidden;
   padding-bottom: 0.5rem;
   list-style-type: none;
+  overflow: hidden;
   // setting transition for dropdown effect
   transition: height 0.25s ease-out;
   // styling list elements
@@ -47,6 +48,23 @@
 // set active state for nav menu
 .nav-active {
   height: 12rem;
+}
+
+// styles for dropdown menu
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $gold;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  z-index: 1;
+  right: 0;
+  // styling elements in dropdown
+  a {
+    color: $black;
+    padding: 12px 16px;
+    display: block;
+  }
 }
 
 // media queries
@@ -66,11 +84,48 @@
     padding: 0;
     height: auto;
     display: flex;
+    overflow: visible;
     align-items: center;
     // change font size a little
     * {
       font-size: 1.25rem;
-      margin: 1rem 0.5rem;
+      padding: 1rem 0.5rem;
     }
+  }
+
+  .nav-tab {
+    position: relative;
+  }
+  // setup for nav tab hover effect
+  .nav-tab:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 15%;
+    left: 0;
+    background-color: $black;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+  }
+  .nav-dropdown:hover .nav-tab:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  // styles to make positioning possible for dropdown
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  // show dropdown when hovered
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  // element hover animation in dropdown
+  .dropdown-content a:hover {
+    background-color: $lighterGold;
   }
 }
