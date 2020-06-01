@@ -851,6 +851,7 @@
   background-color: #c2b669;
   font-family: "Montserrat";
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .nav-logo {
@@ -873,9 +874,9 @@
 
 .nav-tabs {
   height: 0;
-  overflow: hidden;
   padding-bottom: 0.5rem;
   list-style-type: none;
+  overflow: hidden;
   transition: height 0.25s ease-out;
 }
 .nav-tabs * {
@@ -888,6 +889,21 @@
 
 .nav-active {
   height: 12rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c2b669;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  z-index: 1;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
 }
 
 @media screen and (min-width: 1025px) {
@@ -905,11 +921,46 @@
     padding: 0;
     height: auto;
     display: flex;
+    overflow: visible;
     align-items: center;
   }
   .nav-tabs * {
     font-size: 1.25rem;
-    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-tab {
+    position: relative;
+  }
+
+  .nav-tab:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 15%;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+  }
+
+  .nav-dropdown:hover .nav-tab:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f8e988;
   }
 }
 #welcome {
