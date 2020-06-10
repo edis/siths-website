@@ -1,6 +1,6 @@
 // setup gold and center using flex
 #principals-message{
-  background-color: $gold;
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 .principals-message-title-text{
   font-family: $primaryFont;
   font-size: 2.3rem;
-  color: $black;
+  color: $gold;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -29,7 +29,7 @@
 // principal's message paragraph (includes top and bottom)
 .principals-message-paragraph{
   font-family: $secondaryFont;
-  color: $black;
+  color: $white;
   font-size: 1.2rem;
 }
 
