@@ -1,0 +1,134 @@
+#announcements{
+  background-color: $gold;
+  color: $white;
+  font-family: $primaryFont;
+  #announcements-content-all{
+    padding: 2rem 1rem;
+    .announcements-title-text{
+      text-align: center;
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1.5px black;
+    }
+
+    #announcements-table{
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .announcement-cell{
+      width: 100%;
+      background-color: $gold;
+      margin: 0.5rem 0;
+    }
+
+    .announcement-cell-content{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .announcement-cell-calender{
+      background-color:$white;
+      color: $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      .announcement-cell-calender-month{
+        font-size: 1.2rem;
+      }
+      .announcement-cell-calender-day{
+        font-size: 3rem;
+      }
+    }
+
+    .announcement-cell-info{
+      background-color: $black;
+      color: $gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+      padding: 1rem;
+    }
+
+    .announcement-cell-info-paragraph{
+      display: none;
+    }
+
+    .announcement-cell-info-read-more-btn{
+      display: flex;
+      justify-content: flex-end;
+      font-family: $secondaryFont;
+      font-style: italic;
+      color: $white;
+    }
+  }
+
+}
+
+
+// for monitors and larger screens
+@media screen and (min-width: 1023px) {
+  #announcements {
+    #announcements-content-all {
+      max-width: 1300px;
+      margin: auto;
+      #announcements-table {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .announcement-cell {
+          padding: 0 0.5rem;
+          .announcement-cell-content {
+            flex-direction: column;
+            .announcement-cell-calender {
+              width: 100%;
+            }
+            .announcement-cell-info{
+              text-align: center;
+              width: 100%;
+              .announcement-cell-info-title{
+                margin-bottom: 0.5rem;
+              }
+              .announcement-cell-info-paragraph{
+                display: block;
+                font-family: $secondaryFont;
+              }
+              .announcement-cell-info-read-more-btn{
+                display: none;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($larger-screens){
+  #announcements {
+    #announcements-content-all {
+      .announcements-title-text{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+      #announcements-table {
+        .announcement-cell {
+          .announcement-cell-content {
+            .announcement-cell-info{
+              .announcement-cell-info-paragraph{
+                font-family: $secondaryFont;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

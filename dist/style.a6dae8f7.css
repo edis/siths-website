@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans:wght@300;400;600&display=swap");
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -990,7 +990,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .welcome-content-mobile .mobile-text {
   font-size: 1.75rem;
@@ -1053,7 +1053,7 @@
   }
 }
 #principals-message {
-  background-color: #c2b669;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1070,7 +1070,7 @@
 .principals-message-title-text {
   font-family: "Montserrat";
   font-size: 2.3rem;
-  color: black;
+  color: #c2b669;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1078,7 +1078,7 @@
 
 .principals-message-paragraph {
   font-family: "Open Sans";
-  color: black;
+  color: white;
   font-size: 1.2rem;
 }
 
@@ -1126,6 +1126,114 @@
 
   .principals-message-paragraph {
     font-size: 1.8rem;
+  }
+}
+#announcements {
+  background-color: #c2b669;
+  color: white;
+  font-family: "Montserrat";
+}
+#announcements #announcements-content-all {
+  padding: 2rem 1rem;
+}
+#announcements #announcements-content-all .announcements-title-text {
+  text-align: center;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px black;
+}
+#announcements #announcements-content-all #announcements-table {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+#announcements #announcements-content-all .announcement-cell {
+  width: 100%;
+  background-color: #c2b669;
+  margin: 0.5rem 0;
+}
+#announcements #announcements-content-all .announcement-cell-content {
+  display: flex;
+  flex-direction: row;
+}
+#announcements #announcements-content-all .announcement-cell-calender {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+#announcements #announcements-content-all .announcement-cell-calender .announcement-cell-calender-month {
+  font-size: 1.2rem;
+}
+#announcements #announcements-content-all .announcement-cell-calender .announcement-cell-calender-day {
+  font-size: 3rem;
+}
+#announcements #announcements-content-all .announcement-cell-info {
+  background-color: black;
+  color: #c2b669;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding: 1rem;
+}
+#announcements #announcements-content-all .announcement-cell-info-paragraph {
+  display: none;
+}
+#announcements #announcements-content-all .announcement-cell-info-read-more-btn {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Open Sans";
+  font-style: italic;
+  color: white;
+}
+
+@media screen and (min-width: 1023px) {
+  #announcements #announcements-content-all {
+    max-width: 1300px;
+    margin: auto;
+  }
+  #announcements #announcements-content-all #announcements-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell {
+    padding: 0 0.5rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content {
+    flex-direction: column;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-calender {
+    width: 100%;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info {
+    text-align: center;
+    width: 100%;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-title {
+    margin-bottom: 0.5rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
+    display: block;
+    font-family: "Open Sans";
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-read-more-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #announcements #announcements-content-all .announcements-title-text {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
+    font-family: "Open Sans";
+    color: white;
   }
 }
 * {
