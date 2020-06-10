@@ -1193,6 +1193,49 @@
   color: white;
 }
 
+@media screen and (min-width: 1023px) {
+  #announcements #announcements-content-all {
+    max-width: 1300px;
+    margin: auto;
+  }
+  #announcements #announcements-content-all #announcements-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell {
+    padding: 0 0.5rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content {
+    flex-direction: column;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-calender {
+    width: 100%;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info {
+    text-align: center;
+    width: 100%;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-title {
+    margin-bottom: 0.5rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
+    display: block;
+    font-family: "Open Sans";
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-read-more-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #announcements #announcements-content-all .announcements-title-text {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
+    font-family: "Open Sans";
+    color: white;
+  }
+}
 * {
   margin: 0;
   padding: 0;
