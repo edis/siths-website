@@ -43,7 +43,7 @@
   height: 100%;
   width: 50%;
   float: right;
-  background-color: black;
+  background-color: $black;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
   //   setup text clipping over irregular shape
   .welcome-shape-desktop {
@@ -52,7 +52,7 @@
     height: 100%;
     float: left;
   }
-  //   main text for desktop
+  // main text for desktop
   .desktop-text {
     font-size: 4vw;
     padding: 4rem;

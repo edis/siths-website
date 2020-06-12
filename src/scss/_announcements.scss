@@ -71,7 +71,7 @@
 }
 
 
-// for monitors and larger screens
+// for laptops
 @media screen and (min-width: 1023px) {
   #announcements {
     #announcements-content-all {
@@ -109,6 +109,7 @@
   }
 }
 
+// for monitors and larger screens
 @media screen and ($larger-screens){
   #announcements {
     #announcements-content-all {
