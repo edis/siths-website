@@ -1197,6 +1197,7 @@
   #announcements #announcements-content-all {
     max-width: 1300px;
     margin: auto;
+    padding: 3rem 1rem;
   }
   #announcements #announcements-content-all #announcements-table {
     display: grid;
@@ -1227,10 +1228,14 @@
   }
 }
 @media screen and (min-width: 2000px) {
+  #announcements #announcements-content-all {
+    padding: 3rem 1rem;
+  }
   #announcements #announcements-content-all .announcements-title-text {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     -webkit-text-stroke: 2px black;
+    -moz-animation: none;
   }
   #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
     font-family: "Open Sans";
