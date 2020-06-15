@@ -1,7 +1,8 @@
 // setup height
 #welcome {
-  height: 87vh;
-  position: relative;
+  height: 100vh;
+  //height: 87vh;
+   position: relative;
   overflow: hidden;
 }
 
@@ -55,7 +56,7 @@
   // main text for desktop
   .desktop-text {
     font-size: 4vw;
-    padding: 4rem;
+    padding: 12rem 4rem 4rem 4rem;
     text-align: left;
   }
   //   subtext (desktop only)
