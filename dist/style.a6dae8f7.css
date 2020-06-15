@@ -852,6 +852,9 @@
   font-family: "Montserrat";
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-logo {
@@ -964,7 +967,7 @@
   }
 }
 #welcome {
-  height: 87vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -1013,7 +1016,7 @@
 }
 .welcome-content-desktop .desktop-text {
   font-size: 4vw;
-  padding: 4rem;
+  padding: 12rem 4rem 4rem 4rem;
   text-align: left;
 }
 .welcome-content-desktop .welcome-subtext {
