@@ -97,3 +97,21 @@
     display: block;
   }
 }
+
+@media screen and ($larger-screens) {
+  .welcome-content-desktop {
+    .welcome-button{
+      font-size: 2rem;
+      padding: 1.25rem 2.5rem;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (min-height: 592px) and (max-height: 800px) and (min-width: 1036px){
+  .welcome-content-desktop {
+    .welcome-main-text{
+      padding: 0.5rem;
+    }
+  }
+}
