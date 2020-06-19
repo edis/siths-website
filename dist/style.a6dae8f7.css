@@ -1022,7 +1022,7 @@
 .welcome-content-desktop .welcome-subtext {
   color: white;
   font-family: "Open Sans";
-  padding: 0 2rem 5rem 2rem;
+  padding: 0 0 5rem;
   text-align: left;
   font-size: 2vw;
 }
@@ -1063,8 +1063,8 @@
   }
 }
 @media screen and (min-height: 592px) and (max-height: 800px) and (min-width: 1036px) {
-  .welcome-content-desktop .welcome-main-text {
-    padding: 0.5rem;
+  .welcome-content-desktop .desktop-text {
+    padding: 7rem 3rem 3rem 3rem;
   }
 }
 #principals-message {
@@ -1256,6 +1256,95 @@
   #announcements #announcements-content-all #announcements-table .announcement-cell .announcement-cell-content .announcement-cell-info .announcement-cell-info-paragraph {
     font-family: "Open Sans";
     color: white;
+  }
+}
+.footer {
+  position: relative;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.footer div {
+  margin: 0.4rem 0;
+}
+
+.footer-icons {
+  padding: 1rem 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons-wrapper {
+  background-color: #c2b669;
+  width: 25%;
+}
+.icons-wrapper img {
+  transform: scale(0.8);
+}
+
+.address {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.75rem;
+  font-family: "Open Sans";
+  font-size: 3vh;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  height: 11.75vh;
+}
+.footer-logo img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .footer div {
+    margin: 0;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    width: 10%;
+    padding: 0;
+  }
+
+  .icons-wrapper {
+    width: 50%;
+  }
+
+  .address {
+    font-size: 2vh;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .footer {
+    padding: 2rem;
+  }
+
+  .footer-icons {
+    flex-direction: row;
+    width: 20%;
+  }
+
+  .icons-wrapper {
+    width: 25%;
+  }
+
+  .address {
+    font-size: 3vh;
   }
 }
 * {
