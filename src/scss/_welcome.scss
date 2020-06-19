@@ -2,7 +2,7 @@
 #welcome {
   height: 100vh;
   //height: 87vh;
-   position: relative;
+  position: relative;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@
 
 @media screen and ($larger-screens) {
   .welcome-content-desktop {
-    .welcome-button{
+    .welcome-button {
       font-size: 2rem;
       padding: 1.25rem 2.5rem;
       border-radius: 50px;
@@ -109,10 +109,10 @@
   }
 }
 
-@media screen and (min-height: 592px) and (max-height: 800px) and (min-width: 1036px){
+@media screen and (min-height: 592px) and (max-height: 800px) and (min-width: 1036px) {
   .welcome-content-desktop {
-    .welcome-main-text{
-      padding: 0.5rem;
+    .desktop-text {
+      padding: 7rem 3rem 3rem 3rem;
     }
   }
 }
