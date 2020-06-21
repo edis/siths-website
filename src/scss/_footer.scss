@@ -1,100 +1,72 @@
-// background and margins, flexbox setup
+// background & margins, flexbox setup
 .footer {
-  position: relative;
-  background-color: $black;
   display: flex;
   flex-direction: column;
-  div {
-    margin: 0.4rem 0;
-  }
+  background-color: $black;
 }
-
-// spacing b/w icons via flexbox
+// spacing b/w icons w/ flex
 .footer-icons {
-  padding: 1rem 0 0 0;
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 1.25rem 0.75rem;
 }
-
 // icon colors & size
 .icons-wrapper {
+  flex: 1 1 0;
   background-color: $gold;
-  width: 25%;
+  margin: 0.75rem;
   img {
     transform: scale(0.8);
   }
 }
-
 // address font size, style, & padding
 .address {
   color: $white;
+  font-family: $secondaryFont;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
-  padding: 0 1.75rem;
-  font-family: $secondaryFont;
-  font-size: 3vh;
+  margin: 0 1.5rem 1rem 1.5rem;
 }
-
-// copy logo from nav bar w/ white text
+// (almost) direct copy of nav bar logo
 .footer-logo {
   display: flex;
   justify-content: center;
-  height: 11.75vh;
-  // center alignment of image logos
+  height: 10vh;
+  margin: 1rem 0;
   img {
     vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
   }
 }
-
-// format changes for ipad portrait mode
+// change layout on tablet
 @media screen and ($ipad) {
-  // items now ordered in rows
+  // items presented on row
   .footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5rem;
-    div {
-      margin: 0;
+    // make sure all items take up equal space
+    > div {
+      flex: 1 1 0;
     }
+    // add padding b/w elements and border
+    padding: 1rem;
   }
-  // icons are now ordered in columns
-  .footer-icons {
-    flex-direction: column;
-    width: 10%;
-    padding: 0;
-  }
-  .icons-wrapper {
-    width: 50%;
-  }
-  // smaller address font
+
   .address {
-    font-size: 2vh;
+    //   address now aligned center
+    text-align: center;
   }
 }
 
-// more changes for wider screens
 @media screen and ($desktop) {
-  // more padding to compensate for larger screen
+  // more padding
   .footer {
     padding: 2rem;
   }
-
-  // icons can now display in a row again
+  //   smaller social media icons in bigger screens
   .footer-icons {
-    flex-direction: row;
-    width: 20%;
-  }
-  .icons-wrapper {
-    width: 25%;
-  }
-
-  // increase address font again
-  .address {
-    font-size: 3vh;
+    transform: scale(0.75);
   }
 }
