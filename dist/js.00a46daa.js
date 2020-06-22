@@ -202,6 +202,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.hamburgerMenu = hamburgerMenu;
+exports.navhide = navhide;
 
 // function to animate burger and nav selection
 function hamburgerMenu() {
@@ -211,6 +212,22 @@ function hamburgerMenu() {
     hamburger.classList.toggle("is-active");
     navMenu.classList.toggle("nav-active");
   });
+}
+
+function navhide() {
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+      document.getElementById("nav").style.top = "-14vh";
+    }
+
+    prevScrollpos = currentScrollPos;
+  };
 }
 },{}],"js/index.js":[function(require,module,exports) {
 "use strict";
@@ -224,7 +241,9 @@ var _nav = require("./nav");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Handles Hamburger Menu
-(0, _nav.hamburgerMenu)();
+(0, _nav.hamburgerMenu)(); // inits animate on scroll
+
+(0, _nav.navhide)();
 
 _aos.default.init();
 },{"aos":"../node_modules/aos/dist/aos.js","aos/dist/aos.css":"../node_modules/aos/dist/aos.css","./nav":"js/nav.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

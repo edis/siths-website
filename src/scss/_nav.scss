@@ -8,7 +8,9 @@
   top: 0;
   width: 100%;
 }
-
+#nav {
+  transition: top 0.5s;
+}
 // nav logo position + size
 .nav-logo {
   display: inline-block;

@@ -1,5 +1,5 @@
 // setup gold and center using flex
-#principals-message{
+#principals-message {
   background-color: $black;
   display: flex;
   flex-direction: column;
@@ -8,17 +8,17 @@
 }
 
 // hide principal-image
-.principal-image{
+.principal-image {
   display: none;
 }
 
 // set margins for content
-.principals-message-content{
+.principals-message-content {
   margin: 2rem 1.5rem;
 }
 
 // principal's message title
-.principals-message-title-text{
+.principals-message-title-text {
   font-family: $primaryFont;
   font-size: 2.3rem;
   color: $gold;
@@ -28,7 +28,7 @@
 }
 
 // principal's message paragraph (includes top and bottom)
-.principals-message-paragraph{
+.principals-message-paragraph {
   font-family: $secondaryFont;
   //background-color: $gold;
   color: $white;
@@ -36,17 +36,22 @@
 }
 
 // top message paragraph
-.principals-message-paragraph-text-top{
+.principals-message-paragraph-text-top {
   margin-bottom: 1.1rem;
+  span {
+    color: red;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    font-style: italic;
+  }
 }
 
 // media queries
 
 // for desktop
 @media screen and ($desktop) {
-
   // display flex + center
-  .principal-message-content-all{
+  .principal-message-content-all {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -55,7 +60,7 @@
   }
 
   // principal image
-  .principal-image{
+  .principal-image {
     display: block;
     float: left;
     height: 30vh;
@@ -67,38 +72,32 @@
   }
 
   // align text to left side
-  .principals-message-title-text{
+  .principals-message-title-text {
     text-align: left;
   }
 
   // change font of paragraphs
-  .principals-message-title-text{
+  .principals-message-title-text {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
   // change font of paragraph
-  .principals-message-paragraph{
+  .principals-message-paragraph {
     font-size: 1.1rem;
   }
 }
 
 // for monitors and larger screens
 @media screen and ($larger-screens) {
-
   // change font of paragraphs
-  .principals-message-title-text{
+  .principals-message-title-text {
     font-size: 3.5rem;
     margin-bottom: 2rem;
   }
 
   // change font of paragraph
-  .principals-message-paragraph{
+  .principals-message-paragraph {
     font-size: 1.8rem;
   }
 }
-
-
-
-
-

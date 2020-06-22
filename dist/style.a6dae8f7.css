@@ -857,6 +857,10 @@
   width: 100%;
 }
 
+#nav {
+  transition: top 0.5s;
+}
+
 .nav-logo {
   display: inline-block;
   height: 11.75vh;
@@ -1106,6 +1110,12 @@
 .principals-message-paragraph-text-top {
   margin-bottom: 1.1rem;
 }
+.principals-message-paragraph-text-top span {
+  color: red;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-style: italic;
+}
 
 @media screen and (min-width: 1025px) {
   .principal-message-content-all {
@@ -1278,6 +1288,9 @@
   flex: 1 1 0;
   background-color: #c2b669;
   margin: 0.75rem;
+}
+.icons-wrapper a {
+  display: block;
 }
 .icons-wrapper img {
   transform: scale(0.8);
