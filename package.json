@@ -22,6 +22,7 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "hamburgers": "^1.1.3"
   }
 }

@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/style.a6dae8f7.css">
     <title>Staten Island Technical High School</title>
     <link rel="icon" href="/favicon.8d4ad7c1.png">
-  <script src="/style.a6dae8f7.js"></script></head>
+  <script src="/style.a6dae8f7.js"></script><link rel="stylesheet" href="/js.00a46daa.css"></head>
 
   <body>
     <!-- navigation bar -->
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <!-- navigation bar logo (text + img)-->
       <div class="nav-logo">
         <img class="logo-icon" src="/header_logo.46170258.png" alt="">
@@ -25,6 +25,15 @@
       </button>
       <!-- navigation tabs -->
       <ul class="nav-tabs">
+        <li class="nav-dropdown">
+          <!-- nav tab -->
+          <a href="#" class="nav-tab covid">COVID-19</a>
+          <!-- dropdown menu (each tab has one) -->
+          <div class="dropdown-content">
+            <a href="#">Remote Learning</a>
+            <a href="#">Class of 2020</a>
+          </div>
+        </li>
         <li class="nav-dropdown">
           <!-- nav tab -->
           <a href="#" class="nav-tab">Academics</a>
@@ -86,13 +95,13 @@
       <video autoplay="" muted="" loop="" playsinline="" class="welcome-video" src="/480p.46861a99.mp4" poster="/btn_bg.72e11614.jpg"></video>
       <!-- fg text + bk overlay -->
       <!-- mobile layout -->
-      <div class="welcome-content-mobile">
+      <div class="welcome-content-mobile" data-aos="fade-up-right" data-aos-duration="1000">
         <h1 class="welcome-main-text mobile-text">
           A community of academic excellence.
         </h1>
       </div>
       <!-- desktop layout -->
-      <div class="welcome-content-desktop">
+      <div class="welcome-content-desktop" data-aos="fade-left" data-aos-duration="1000">
         <!-- clipping text to irregular shape -->
         <div class="welcome-shape-desktop"></div>
         <h1 class="welcome-main-text desktop-text">
@@ -109,14 +118,14 @@
 
     <!--  principals message block  -->
     <section id="principals-message">
-      <div class="principal-message-content-all">
+      <div class="principal-message-content-all" data-aos-duration="500">
         <!-- principal image -->
         <div class="principal-image-content">
-          <img class="principal-image" src="/erlenwein_img.5d67321d.jpg" alt="">
+          <img class="principal-image" data-aos="fade-right" src="/erlenwein_img.5d67321d.jpg" alt="">
         </div>
 
         <!--  all content in principal message   -->
-        <div class="principals-message-content">
+        <div class="principals-message-content" data-aos="fade-left">
           <!--   principal message title   -->
           <div class="principals-message-title">
             <h1 class="principals-message-title-text">
@@ -129,6 +138,8 @@
             <!-- message top paragraph  -->
             <p class="principals-message-paragraph-text-top">
               Welcome to the Staten Island Technical High School website.
+              <span>NOTE: This is not the official SITHS website, but instead a new
+                and functional design prototype.</span>
             </p>
 
             <!--  message bottom paragraph  -->
@@ -148,12 +159,14 @@
       <!-- announcements section content -->
       <div id="announcements-content-all">
         <!-- announcements section header -->
-        <h1 class="announcements-title-text">Upcoming Events</h1>
+        <h1 class="announcements-title-text" data-aos="zoom-in" data-aos-duration="500">
+          Upcoming Events
+        </h1>
 
         <!--  announcements content table (contains 4 cells) -->
         <div id="announcements-table">
           <!--  announcement cell -->
-          <div class="announcement-cell">
+          <div class="announcement-cell" data-aos="flip-left" data-aos-duration="750" data-aos-delay="0">
             <!--  announcement cell content -->
             <div class="announcement-cell-content">
               <!--  announcement cell calender -->
@@ -183,7 +196,7 @@
           </div>
 
           <!--  announcement cell -->
-          <div class="announcement-cell">
+          <div class="announcement-cell" data-aos="flip-left" data-aos-duration="750" data-aos-delay="100">
             <!--  announcement cell content -->
             <div class="announcement-cell-content">
               <!--  announcement cell calender -->
@@ -215,7 +228,7 @@
           </div>
 
           <!--  announcement cell -->
-          <div class="announcement-cell">
+          <div class="announcement-cell" data-aos="flip-left" data-aos-duration="750" data-aos-delay="200">
             <!--  announcement cell content -->
             <div class="announcement-cell-content">
               <!--  announcement cell calender -->
@@ -244,7 +257,7 @@
           </div>
 
           <!--  announcement cell -->
-          <div class="announcement-cell">
+          <div class="announcement-cell" data-aos="flip-left" data-aos-duration="750" data-aos-delay="300">
             <!--  announcement cell content -->
             <div class="announcement-cell-content">
               <!--  announcement cell calender -->
@@ -313,6 +326,6 @@
     </footer>
 
     <!-- link to js files   -->
-    <script src="/js.00a46daa.js"></script>
+    <script async="" defer="" src="/js.00a46daa.js"></script>
   </body>
 </html>
