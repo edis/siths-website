@@ -1299,6 +1299,7 @@
 .address {
   color: white;
   font-family: "Open Sans";
+  text-align: center;
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -1348,6 +1349,43 @@
 
   .address {
     font-size: 2rem;
+  }
+}
+#names {
+  background-color: #c2b669;
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+#names-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.names-prompt {
+  color: white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.names-by {
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 1025px) {
+  #names-content {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 1.25rem;
+  }
+
+  .names-by {
+    margin-right: 4rem;
   }
 }
 * {

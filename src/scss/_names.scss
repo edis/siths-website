@@ -1,0 +1,46 @@
+// setup colors and font
+#names{
+  background-color: $gold;
+  font-family: $primaryFont;
+  color: $black;
+}
+
+// set to flex, center, and give padding
+#names-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+// give white color, and create a border around the text
+.names-prompt{
+  color: $white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px black;
+}
+
+// small margin-bottom
+.names-by{
+  margin-bottom: 0.75rem;
+}
+
+
+// media query for desktop
+@media screen and ($desktop) {
+
+  // change direction to row, and adjust padding
+  #names-content{
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 1.25rem;
+  }
+
+  // add margin-right
+  .names-by{
+    margin-right: 4rem;
+  }
+}
