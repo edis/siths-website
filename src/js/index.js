@@ -5,8 +5,8 @@ import { hamburgerMenu, navhide } from "./nav";
 
 // Handles Hamburger Menu
 hamburgerMenu();
-
-// inits animate on scroll
+// hides nav bar when scrolling down
 navhide();
 
+// inits animate on scroll
 AOS.init();
