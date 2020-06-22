@@ -5,6 +5,7 @@ import { hamburgerMenu, navhide } from "./nav";
 
 // Handles Hamburger Menu
 hamburgerMenu();
+
 // inits animate on scroll
 navhide();
 

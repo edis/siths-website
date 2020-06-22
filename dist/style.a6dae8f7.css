@@ -1341,6 +1341,15 @@
     transform: scale(0.75);
   }
 }
+@media screen and (min-width: 2000px) {
+  .footer-icons {
+    transform: scale(0.5);
+  }
+
+  .address {
+    font-size: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

@@ -73,3 +73,14 @@
     transform: scale(0.75);
   }
 }
+
+
+@media screen and ($larger-screens) {
+  .footer-icons {
+    transform: scale(0.5);
+  }
+
+  .address{
+    font-size: 2rem;
+  }
+}
