@@ -14,7 +14,7 @@
 
   <body>
     <!-- navigation bar -->
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-duration="1000">
       <!-- navigation bar logo (text + img)-->
       <div class="nav-logo">
         <img class="logo-icon" src="media/header_logo.png" alt="" />
@@ -28,6 +28,15 @@
       </button>
       <!-- navigation tabs -->
       <ul class="nav-tabs">
+        <li class="nav-dropdown">
+          <!-- nav tab -->
+          <a href="#" class="nav-tab covid">COVID-19</a>
+          <!-- dropdown menu (each tab has one) -->
+          <div class="dropdown-content">
+            <a href="#">Remote Learning</a>
+            <a href="#">Class of 2020</a>
+          </div>
+        </li>
         <li class="nav-dropdown">
           <!-- nav tab -->
           <a href="#" class="nav-tab">Academics</a>
@@ -97,13 +106,21 @@
       ></video>
       <!-- fg text + bk overlay -->
       <!-- mobile layout -->
-      <div class="welcome-content-mobile">
+      <div
+        class="welcome-content-mobile"
+        data-aos="fade-up-right"
+        data-aos-duration="1000"
+      >
         <h1 class="welcome-main-text mobile-text">
           A community of academic excellence.
         </h1>
       </div>
       <!-- desktop layout -->
-      <div class="welcome-content-desktop">
+      <div
+        class="welcome-content-desktop"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <!-- clipping text to irregular shape -->
         <div class="welcome-shape-desktop"></div>
         <h1 class="welcome-main-text desktop-text">
@@ -120,7 +137,7 @@
 
     <!--  principals message block  -->
     <section id="principals-message">
-      <div class="principal-message-content-all">
+      <div class="principal-message-content-all" data-aos="fade-right">
         <!-- principal image -->
         <div class="principal-image-content">
           <img class="principal-image" src="media/erlenwein_img.jpg" alt="" />
@@ -332,6 +349,6 @@
     </footer>
 
     <!-- link to js files   -->
-    <script src="js/index.js"></script>
+    <script async defer src="js/index.js"></script>
   </body>
 </html>

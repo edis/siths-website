@@ -48,9 +48,14 @@
   }
 }
 
+// red text for covid-19 nav selection
+.covid {
+  color: rgb(200, 0, 0);
+}
+
 // set active state for nav menu
 .nav-active {
-  height: 12rem;
+  height: 14rem;
 }
 
 // styles for dropdown menu
@@ -59,6 +64,7 @@
   position: absolute;
   background-color: $gold;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
   width: 250px;
   z-index: 1;
   right: 0;
